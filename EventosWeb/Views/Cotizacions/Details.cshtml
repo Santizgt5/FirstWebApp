@@ -1,0 +1,54 @@
+﻿@model EventosWeb.Models.Cotizacion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cotizacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Necesidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Necesidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuando)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cuando)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NDeInvitados)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NDeInvitados)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
